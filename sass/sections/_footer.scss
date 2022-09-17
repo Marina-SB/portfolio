@@ -1,0 +1,37 @@
+.footer {
+    // margin-top: auto; /* sticky footer */
+    padding-top: 23px;
+    padding-bottom: 40px;
+    background-color: #333333;
+    color: #ffffff;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        padding-top: 34px;
+    }
+
+
+    .footer__copyright {
+        margin-bottom: 13px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .footer__light {
+        font-size: 16px;
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            line-height: 1.6;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        &:hover{
+            font-weight: 700;
+            border-bottom: 1px solid #ffffff;
+            width: fit-content;}
+    }
+}

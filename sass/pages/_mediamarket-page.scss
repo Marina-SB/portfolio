@@ -1,0 +1,93 @@
+.project-select {
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.project-content {
+    max-width: 458px;
+
+    .project-content__links {
+        margin-bottom: 30px;
+
+        a {
+            margin-left: 60px;
+            margin-bottom: 20px;
+            color:#96969d;
+            cursor: pointer;
+
+            &:hover {
+                color: $linkColor;
+            }
+        }
+    }
+
+    .project-content__title {
+        margin-bottom: 30px;
+
+        .bottom-line {
+            width: auto;
+            z-index: 1;
+        }
+
+        .bottom-line::after {
+            height: 6px;
+            bottom: 4px;
+        }
+    }
+
+    .project-content__paragraph {
+        margin-bottom: 60px;
+
+        p {
+        font-size: 16px;
+        }
+    }
+
+    .project-content__block {
+        display: block;
+
+        li {
+        font-size: 16px;
+        }
+    } 
+}
+
+.project-content__link {
+    position: relative;
+    
+    .project-content-icon {
+    position: absolute;
+    left: 0;
+    top: 10;
+    }
+
+    .fa-github {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .fa-window-maximize {
+    width: 45px;
+    height: 45px;
+    }
+
+}
+
+
+
+
+.project-image {
+    max-width: 652px;
+    margin-left: 30px;
+}
+
+.project-img {
+    margin-left: 15px;
+    object-fit: contain;
+    max-width: 652px;
+    height: 800px;
+    border: 0;
+    box-shadow: 0px 0px 50px 0px #ddebf3;
+}
+

@@ -1,0 +1,25 @@
+.text-link {
+    font-size: 24px;
+    color: $text;
+    border-bottom: 1px solid $text;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: $linkColor;
+        border-bottom: 1px solid $linkColor;
+    }
+
+    &:active {
+        color: $accentText;
+        border-bottom: 1px solid $accentText;
+    }
+}

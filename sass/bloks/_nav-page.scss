@@ -1,0 +1,58 @@
+#page-nav {
+    position: fixed;
+    right: 80px;
+    top: 40.57%;
+    z-index: 100;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        display: none;
+        // right: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        right: 15px;
+    }
+
+    li {
+        width: 14px;
+        height: 14px;
+        background-color: #89b4cb;
+        border-radius: 50%;
+        margin-bottom: 26px;
+        transition: 0.5s;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            width: 12px;
+            height: 12px;
+            margin-bottom: 15px;
+        }
+    }
+
+    li a {
+        display: block;
+        height: 100%;
+    }
+
+    li.active {
+        background-color: $activeText;
+    }
+}
+
+#backTop a {
+    color: #89b4cb;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 40px;
+}
+
+#backTop a:hover {
+    opacity: 0.5;
+}
+
+.noscroll {
+    overflow: hidden;
+}

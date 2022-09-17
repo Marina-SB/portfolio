@@ -1,0 +1,44 @@
+// Base
+@import "./base/base";
+@import "./base/vars";
+
+// Blocks
+@import "./bloks/bottom-line";
+@import "./bloks/button";
+@import "./bloks/gumburger";
+@import "./bloks/mobile-menu";
+@import "./bloks/social";
+@import "./bloks/icon-round";
+@import "./bloks/card";
+@import "./bloks/title-1";
+@import "./bloks/title-2";
+@import "./bloks/title-3";
+@import "./bloks/title-4";
+@import "./bloks/title-5";
+@import "./bloks/text-link";
+@import "./bloks/block-menu";
+@import "./bloks/timeline-block-item";
+@import "./bloks/contact-form";
+@import "./bloks/flex-wrapper";
+@import "./bloks/header-iner";
+@import "./bloks/project-btn";
+@import "./bloks/nav-page";
+
+// Sections
+@import "./sections/header";
+@import "./sections/header-center";
+@import "./sections/headerBgImage";
+@import "./sections/headerSkills";
+@import "./sections/portfolio-cards";
+@import "./sections/timeline";
+@import "./sections/contacts";
+@import "./sections/footer";
+
+
+// Pages
+@import "./pages/portfolio-page";
+@import "./pages/contacts-page";
+@import "./pages/mediamarket-page";
+
+// Media
+@import "./media/media";

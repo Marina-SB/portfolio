@@ -1,0 +1,15 @@
+.title-3 {
+  color: $text;
+  font-weight: 800;
+  font-size: 40px;
+
+  /* Tablet */
+  @media (max-width: 991px) {
+    font-size: 32px;
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+}

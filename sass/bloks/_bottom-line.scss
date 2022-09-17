@@ -1,0 +1,22 @@
+.bottom-line {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: $text;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: -3px;
+        width: 102%;
+        height: 12px;
+        bottom: 15px;
+        z-index: -1;
+        background: $accentColor;
+        transition: 0.5s;
+    }
+}
+
+.bottom-line:hover::after {
+    background: $accentText;
+}

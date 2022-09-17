@@ -1,0 +1,36 @@
+.body-bg {
+ background-color: #f4f8f9;
+}
+
+.header-contacts {
+    background-image: url("./../img/bg/contacts-bg.jpg");
+    padding-bottom: 0;
+}
+
+.contacts-page {
+    padding-top: 75px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        padding-top: 97px;
+    }
+
+    .contacts-page-title {
+        margin-bottom: 80px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 52px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            margin-bottom: 38px;
+        }
+    }
+}
+
+a.active.bottom-line {
+    color: #fbdc4d;
+    font-size: 22px;
+}

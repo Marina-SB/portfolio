@@ -1,0 +1,23 @@
+// Icon round ширина и высота
+$width: 50px;
+$height: 50px;
+
+.icon-round {
+    width: $width;
+    height: $height;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 50%;
+    border: none;
+
+    background-color: #4d76a1;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #30639b;
+    }
+}

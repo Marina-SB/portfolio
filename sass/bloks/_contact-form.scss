@@ -1,0 +1,135 @@
+.contact-column {
+    width: 48%;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: 6px;
+        // max-width: 50%;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
+form.contact-form {
+    padding: 76px 60px 40px;
+    margin-left: 15px;
+    max-width: 515px;
+    background-color: #fff;
+    color: #bcbcbc;
+    border: 0;
+    box-shadow: 0px 0px 50px 0px #ddebf3;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-left: 0;
+        padding: 58px 25px 40px;
+        font-size: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-left: 0;
+        padding: 58px 15px 40px;
+        width: 290px;
+    }
+}
+
+.form-item {
+    position: relative;
+
+    .form-field {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #bcbcbc;
+        height: 45px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    textarea.form-field {
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 116px;
+    }
+
+    .button {
+        /* Tablet */
+        @media (max-width: 991px) {
+            max-width: 100%;
+            height: 55px;
+            font-size: 20px;
+            line-height: 47px;
+        }
+    }
+
+    input[type="submit"]{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+}
+
+.form-item + .form-item {
+    margin-top: 60px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
+}
+
+.form-item:nth-last-child(1) {
+    margin-top: 30px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.fake-placeholder {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-weight: 700;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.fake-placeholder.active {
+    top: -27px;
+    font-size: 16px;
+    color: #ed9626;
+
+    .form-field {
+        border: 0;
+        border-bottom: 2px solid #bcbcbc;
+    }
+
+}
+
+.form-field:active,
+.form-field:focus {
+    border: 0;
+    border-bottom: 2px solid #ea736d;
+}
+
+label.error {
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+}
+
+.contact-form__success {
+    font-size: 16px;
+    font-weight: 400;
+}

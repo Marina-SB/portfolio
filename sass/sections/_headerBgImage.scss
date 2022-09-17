@@ -1,0 +1,33 @@
+.header-bgImage {
+    position: relative;
+    z-index: 1;
+    max-width: 1600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -127px;
+    margin-bottom: -20px;
+
+    /* Tablet L */
+    @media (max-width: 990px) {
+
+    }
+    
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: -63px;
+        margin-bottom: 9px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-top: 2px;
+        margin-bottom: 75px;
+        transform: scale(1.8);
+    }
+
+    // /* MobileXS */
+    // @media(max-width: 599px) {
+    //     transform: scale(1.8);
+    // }
+}

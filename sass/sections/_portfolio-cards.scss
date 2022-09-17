@@ -1,0 +1,180 @@
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f4f8f9;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        padding-top: 62px;
+        padding-bottom: 75px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-top: 46px;
+        padding-bottom: 94px;
+    }
+}
+
+.portfolio__title {
+    margin-bottom: 38px;
+
+    /* Tablet L*/
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.portfolio-title {
+    margin-bottom: 40px;
+
+    .bottom-line {    
+        &::after {
+            bottom: 10px;
+        }
+    }
+    
+}
+
+span.bottom-line.bottom-line--portfolio {
+    z-index: 1;
+}
+
+.portfolio-block__menu {
+    margin-bottom: 35px;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.portfolio-block__cards {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Tablet L*/
+    @media (max-width: 1199px) {
+        max-width: 812px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        // margin-left: -15px;
+        // margin-right: -15px;
+        margin-bottom: -11px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: -15px;
+    }
+}
+
+.project-card {
+    /* Tablet */
+    @media (max-width: 991px) {
+        max-width: 45%;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        max-width: 339px;
+    }
+}
+
+.project-card--big {
+    max-width: 555px;
+
+    /* Tablet L */
+    @media (max-width: 1199px) {
+        max-width: 360px;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        max-width: 45%;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        max-width: 339px;
+    }
+
+    .project-card__title {
+        font-size: 32px;
+
+            /* Tablet */
+            @media (max-width: 991px) {
+                margin-bottom: 5px;
+            }
+
+        .text-link {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        font-size: 22px;
+
+        /* Tablet L*/
+        @media (max-width: 1199px) {
+            font-size: 18px;
+        }
+        
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.project-card__img figure {
+    height: 240px;
+    margin: 0;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        height: 200px;
+    }
+
+    img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Вписываем фотографию в область */
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 290px;
+            height: inherit;
+        }
+    }
+}
+
+.show-project-cards {
+    font-size: 21px;
+
+    /* Tablet L*/
+    @media (max-width: 1199px) {
+        display: inline-block;
+        text-align: center;
+    }
+
+    &:hover {
+        color: #039be5;
+    }
+}

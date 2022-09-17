@@ -1,0 +1,132 @@
+.header-skills {
+        margin-bottom: 90px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 0;
+    }
+}
+
+.header-skills__wrapper {
+    // margin-top: 22px;
+    align-items: flex-start;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.header-skills__content {
+    width: 653px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        width: 339px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 290px;
+        margin-bottom: 19px;
+    }
+}
+
+.header-skills__content,
+.header-skills__connection {
+    height: auto;
+    flex-shrink: 0;
+}
+
+.header-skills__title {
+    margin-bottom: 24px;
+}
+
+.header-skills__title-social {
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 18px;
+    }
+}
+
+.header-skills__connection {
+    width: 360px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        width: 338px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 290px;
+    }
+
+    .social {
+        margin-bottom: 20px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 5px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+}    
+
+.header-skills__list {
+    
+    margin-bottom: 38px;
+    font-size: 24px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 260px;
+    }
+
+    li {
+        margin-bottom: 3px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 16px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    li:before {
+        content: "\2014 ";
+        margin-right: 10px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.header-skills__buttons {
+    /* Tablet */
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

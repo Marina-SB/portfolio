@@ -1,0 +1,108 @@
+.timeline-block__item {
+    position: relative;
+    padding-top: 19px;
+    width: 50%;
+    min-height: 173px;
+    padding-left: 85px;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        max-width: 100%;
+        min-height: 110px;
+    }
+
+    &::after {
+        content: "";
+        width: 4px;
+        background-color: #e1eef4;
+        position: absolute;
+        top: 94px;
+        bottom: -25px;
+        left: 36px;
+    }
+
+    &:first-child {
+        &::before {
+            content: "";
+            left: auto;
+            right: -2px;
+            top: -70px;
+            width: 4px;
+            height: 55px;
+            background-color: #e1eef4;
+            position: absolute;
+
+            /* Mobile */
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.timeline-block__item:hover {
+    .bottom-line::after {
+            background: $accentText;
+    }
+}
+
+.timeline-block__item:nth-child(even) {
+    margin-left: auto;
+    margin-left: auto;
+
+    &::after {
+        left: -2px;
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            top: 125px;
+            bottom: -44px;
+            left: 34px;
+        }
+    }
+
+    .timeline-item__icon {
+        left: -37px;
+        right: auto;
+        
+        /* Mobile */
+        @media (max-width: 767px) {
+            left: 0px;
+            top: 33px;
+        }
+    }
+}
+
+
+
+.timeline-block__item + .timeline-block__item {
+    margin-top: 50px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: 35px;
+    }
+}
+
+.timeline-block__item:last-child {
+    &::after {
+        display: none;
+    }
+}
+
+.timeline-item__icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 74px;
+    height: 74px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 28px;
+    box-shadow: 0px 0px 30px 0px rgb(201, 229, 247);
+    background-color: #fff;
+}

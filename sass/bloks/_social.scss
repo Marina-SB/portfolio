@@ -1,0 +1,99 @@
+// Social
+.social {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.social-icon--vk {
+    display: inline-block;
+}
+
+.svg__social {
+    width: 50px;
+    height: 50px;  
+}
+
+.social__link {
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .svg__social--github {
+        color: #000;
+
+        &:hover {
+            color: rgb(119, 206, 62);
+        }
+    }
+
+    .svg__social--telegram {
+        color: #039be5;
+
+        &:hover {
+            color: #096d9e;
+        }
+    }
+
+    .svg__social--vk {
+        width: 35px;
+        height: 35px;
+        color: #4d76a1;
+
+        &:hover {
+            color: #0b325c;
+        }
+    }
+
+    .svg__social--facebook {
+        color: #3b5998;
+
+        &:hover {
+            color: rgb(8, 61, 119);
+        }
+    }
+
+    .svg__social--viber {
+        width: 35px;
+        height: 35px;
+        color: #fff;
+    }
+
+    .svg__social--whatsApp {
+        width: 35px;
+        height: 35px;
+        color: #fff;
+    }
+}
+
+.header-social__link.viber:hover {
+    color:rgb(106, 4, 179);
+}
+
+.header-social__link.whatsApp:hover {
+    color:rgb(119, 206, 62);
+}
+
+.social-icon--vk .icon-round {
+    background-color: rgb(77, 118, 161);
+
+    &:hover {
+        background-color: rgb(131, 188, 248);
+    }
+}
+
+.social-icon--viber .icon-round {
+    background-color: rgb(106, 4, 179);
+
+    &:hover {
+        background-color: rgb(202, 131, 253);
+    }
+}
+
+.social-icon--whatsApp .icon-round {
+    background-color: rgb(119, 206, 62);
+
+    &:hover {
+        background-color: rgb(170, 240, 124);
+    }
+}
